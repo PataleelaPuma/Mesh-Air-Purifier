@@ -178,3 +178,11 @@ Choose machine type: qemuarm-64
 8.	Erase the status appear, hold the button until it’s gone, and wait until it finishes
 9.	In the Settings tab, click Devices & services
 10.	Then add ESP Home
+
+### **Demo Video**
+[Demo Video](https://youtu.be/HwIsHfZKcZ4)
+
+Directed by:
+6430252321 | Pataleela Buranavichetkul
+6432058321 | Thakdanai Srisuk
+6430146521 | Thanadon Tanabodeejirapong

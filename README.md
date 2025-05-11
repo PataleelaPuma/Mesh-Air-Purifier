@@ -21,7 +21,7 @@ _Home Assistant:_
 
 ### **Overall System Diagram**
 
-![Overall System Diagram](https://github.com/user-attachments/assets/803d0222-258e-492d-b1f1-dd994c2e58d6)
+![Overall System Diagram]([https://github.com/user-attachments/assets/803d0222-258e-492d-b1f1-dd994c2e58d6](https://github.com/PataleelaPuma/Mesh-Air-Purifier/blob/main/Pictures/Air%20purifier%20Overall%20Diagram.jpg))
 
 ### **Mesh Logic and Air Quality-Based Fan Control** 
 

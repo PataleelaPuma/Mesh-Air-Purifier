@@ -183,6 +183,6 @@ Choose machine type: qemuarm-64
 [Demo Video](https://youtu.be/HwIsHfZKcZ4)
 
 Directed by:
-6430252321 | Pataleela Buranavichetkul
-6432058321 | Thakdanai Srisuk
-6430146521 | Thanadon Tanabodeejirapong
+6430252321 Pataleela Buranavichetkul |
+6432058321 Thakdanai Srisuk |
+6430146521 Thanadon Tanabodeejirapong

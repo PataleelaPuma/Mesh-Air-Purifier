@@ -27,7 +27,7 @@ _Home Assistant:_
 
 We designed a mesh-based logic model that considers PM2.5 values from multiple sensor nodes in a structured grid layout below.
 
-![Image](https://github.com/user-attachments/assets/9810bd02-f311-4587-a415-cca2d6c7cef3)
+![Image](https://github.com/PataleelaPuma/Mesh-Air-Purifier/blob/main/Pictures/Mesh%20Map.png?raw=true)
 
 The environment was divided into a 4x4 grid, each cell contains the location (x,y) and ideally contains PM2.5 Values from the sensors + ESP32 sensor pair, Red cells represent the location of the PM2.5 sensor, and Green cells represent the location of the air purifier. Each sensor reports real-time PM2.5 concentrations to Home Assistant. The location of the fan is fixed near this grid, and its proximity to each sensor is a distance between its cell and the sensor’s cell.
 
@@ -37,11 +37,11 @@ Control Region Definition
 
 - For air purifiers located near the grid corners or edges (e.g., A1), a 2×2 region is considered (the purifier cell and its immediate neighbors).
 
-![2×2 region](https://github.com/user-attachments/assets/377c2678-983b-4e55-9bee-526113944dcd)
+![2×2 region](https://github.com/PataleelaPuma/Mesh-Air-Purifier/blob/main/Pictures/2x2%20Coverd%20Region.png?raw=true)
 
 - For centrally located air purifiers (e.g., B2), a 3×3 region is considered, centered around the purifier cell.
 
-![3×3 region](https://github.com/user-attachments/assets/3a821ac8-0c96-4e59-9115-ffe1d44fb57e)
+![3×3 region](https://github.com/PataleelaPuma/Mesh-Air-Purifier/blob/main/Pictures/3x3%20Coverd%20Region.png?raw=true)
 
 **Fan ON/OFF Conditions:**
 
@@ -94,11 +94,11 @@ _4. Interpolation Formula_
 
 - PM2.5 Sensor Wiring Diagram:
 
-![PM2.5 Sensor Wiring Diagram](https://github.com/user-attachments/assets/68d005d8-72d4-4489-879c-439b5706546a)
+![PM2.5 Sensor Wiring Diagram](https://github.com/PataleelaPuma/Mesh-Air-Purifier/blob/main/Pictures/Wiring%20PM2.5%20Sensor.png?raw=true)
 
 - AC Fan & Sonoff Wiring Diagram:
 
-![AC Fan & Sonoff Wiring Diagram](https://github.com/user-attachments/assets/771cfec3-641f-4774-a85c-c8c268a46258)
+![AC Fan & Sonoff Wiring Diagram](https://github.com/PataleelaPuma/Mesh-Air-Purifier/blob/main/Pictures/Wiring%20sonoff%20&%20ac%20fan.png?raw=true)
 
 ### **Software Section**
 **Home Assistant Setup**

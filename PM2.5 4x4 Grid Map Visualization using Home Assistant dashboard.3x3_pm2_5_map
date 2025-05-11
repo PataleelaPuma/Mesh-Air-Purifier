@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.3x3_pm2_5_map",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "title": "4x4 Grid Map",
+          "header": {
+            "type": "grid",
+            "title": "Room PM2.5 Map",
+            "columns": 3,
+            "square": true,
+            "cards": [
+              {
+                "type": "sensor",
+                "entity": "sensor.pm25_grid_a1",
+                "name": "A1"
+              },
+              {
+                "type": "sensor",
+                "entity": "sensor.pm25_grid_a2",
+                "name": "A2"
+              },
+              {
+                "type": "sensor",
+                "entity": "sensor.pm25_grid_a3",
+                "name": "A3"
+              },
+              {
+                "type": "sensor",
+                "entity": "sensor.pm25_grid_b1",
+                "name": "B1"
+              },
+              {
+                "type": "sensor",
+                "entity": "sensor.pm25_grid_b2",
+                "name": "B2"
+              },
+              {
+                "type": "sensor",
+                "entity": "sensor.pm25_grid_b3",
+                "name": "B3"
+              },
+              {
+                "type": "sensor",
+                "entity": "sensor.pm25_grid_c1",
+                "name": "C1"
+              },
+              {
+                "type": "sensor",
+                "entity": "sensor.pm25_grid_c2",
+                "name": "C2"
+              },
+              {
+                "type": "sensor",
+                "entity": "sensor.pm25_grid_c3",
+                "name": "C3"
+              }
+            ]
+          },
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "New section"
+                },
+                {
+                  "square": true,
+                  "type": "grid",
+                  "title": "4x4 Room PM2.5 Map",
+                  "grid_options": {
+                    "rows": 4,
+                    "columns": 12
+                  },
+                  "cards": [
+                    {
+                      "type": "sensor",
+                      "entity": "sensor.pm2_5_grid_a1",
+                      "name": "PM2.5_A1",
+                      "graph": "none",
+                      "detail": 1
+                    },
+                    {
+                      "type": "sensor",
+                      "entity": "sensor.pm2_5_grid_a2",
+                      "name": "PM2.5_A2",
+                      "graph": "none",
+                      "detail": 1
+                    },
+                    {
+                      "type": "sensor",
+                      "entity": "sensor.pm2_5_grid_a3",
+                      "name": "PM2.5_A3",
+                      "graph": "none",
+                      "detail": 1
+                    },
+                    {
+                      "type": "sensor",
+                      "entity": "sensor.pm2_5_grid_a4",
+                      "name": "PM2.5_A4",
+                      "graph": "none",
+                      "detail": 1
+                    },
+                    {
+                      "type": "sensor",
+                      "entity": "sensor.pm2_5_grid_b1",
+                      "name": "PM2.5_B1",
+                      "graph": "none",
+                      "detail": 1
+                    },
+                    {
+                      "type": "sensor",
+                      "entity": "sensor.pm2_5_grid_b2",
+                      "name": "PM2.5_B2",
+                      "graph": "none",
+                      "detail": 1
+                    },
+                    {
+                      "type": "sensor",
+                      "entity": "sensor.pm2_5_grid_b3",
+                      "name": "PM2.5_B3",
+                      "graph": "none",
+                      "detail": 1
+                    },
+                    {
+                      "type": "sensor",
+                      "entity": "sensor.pm2_5_grid_b4",
+                      "name": "PM2.5_B4",
+                      "graph": "none",
+                      "detail": 1
+                    },
+                    {
+                      "type": "sensor",
+                      "entity": "sensor.pm2_5_grid_c1",
+                      "name": "PM2.5_C1",
+                      "graph": "none",
+                      "detail": 1
+                    },
+                    {
+                      "type": "sensor",
+                      "entity": "sensor.pm2_5_grid_c2",
+                      "name": "PM2.5_C2",
+                      "graph": "none",
+                      "detail": 1
+                    },
+                    {
+                      "type": "sensor",
+                      "entity": "sensor.pm2_5_grid_c3",
+                      "name": "PM2.5_C3",
+                      "graph": "none",
+                      "detail": 1
+                    },
+                    {
+                      "type": "sensor",
+                      "entity": "sensor.pm2_5_grid_c4",
+                      "name": "PM2.5_C4",
+                      "graph": "none",
+                      "detail": 1
+                    },
+                    {
+                      "type": "sensor",
+                      "entity": "sensor.pm2_5_grid_d1",
+                      "name": "PM2.5_D1",
+                      "graph": "none",
+                      "detail": 1
+                    },
+                    {
+                      "type": "sensor",
+                      "entity": "sensor.pm2_5_grid_d2",
+                      "name": "PM2.5_D2",
+                      "graph": "none",
+                      "detail": 1
+                    },
+                    {
+                      "type": "sensor",
+                      "entity": "sensor.pm2_5_grid_d3",
+                      "name": "PM2.5_D3",
+                      "graph": "none",
+                      "detail": 1
+                    },
+                    {
+                      "type": "sensor",
+                      "entity": "sensor.pm2_5_grid_d4",
+                      "name": "PM2.5_D4",
+                      "graph": "none",
+                      "detail": 1
+                    }
+                  ],
+                  "columns": 4
+                }
+              ]
+            }
+          ],
+          "type": "sections",
+          "max_columns": 4,
+          "cards": []
+        }
+      ]
+    }
+  }
+}

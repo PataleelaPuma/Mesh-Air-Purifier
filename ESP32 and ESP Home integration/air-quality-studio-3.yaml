@@ -1,0 +1,42 @@
+substitutions:
+  name: "Studio AQ 3"
+
+esphome:
+  name: air-quality-studio-3
+  on_boot:
+    priority: -10
+    then:
+      - delay: 5s
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  power_save_mode: none
+  output_power: 17.5dB
+
+api:
+
+ota:
+  platform: esphome
+
+logger:
+
+uart:
+  rx_pin: GPIO12
+  baud_rate: 9600
+
+sensor:
+  - platform: pm1006
+    id: aq_sensor
+    pm_2_5:
+      name: $name PM2.5
+
+
+
+
+

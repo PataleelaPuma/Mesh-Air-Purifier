@@ -1,0 +1,372 @@
+- id: '1746514710185'
+  alias: Fan control based on PM2.5 in A1
+  description: ''
+  triggers:
+  - entity_id:
+    - sensor.pm2_5_grid_a1
+    - sensor.pm2_5_grid_a2
+    - sensor.pm2_5_grid_b1
+    - sensor.pm2_5_grid_b2
+    above: 30
+    trigger: numeric_state
+  - entity_id:
+    - sensor.pm2_5_grid_a1
+    - sensor.pm2_5_grid_a2
+    - sensor.pm2_5_grid_b1
+    - sensor.pm2_5_grid_b2
+    below: 25
+    trigger: numeric_state
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_a1
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_a2
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b1
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b2
+        above: 30
+      sequence:
+      - target:
+          entity_id: switch.10021cb2bf_1
+        action: switch.turn_on
+        data: {}
+    - conditions:
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_a1
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_a2
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b1
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b2
+        below: 25
+      sequence:
+      - target:
+          entity_id: switch.10021cb2bf_1
+        action: switch.turn_off
+        data: {}
+  mode: single
+- id: '1746518464657'
+  alias: Fan control based on PM2.5 in D1
+  description: ''
+  triggers:
+  - entity_id:
+    - sensor.pm2_5_grid_c1
+    - sensor.pm2_5_grid_c2
+    - sensor.pm2_5_grid_d1
+    - sensor.pm2_5_grid_d2
+    above: 30
+    trigger: numeric_state
+  - entity_id:
+    - sensor.pm2_5_grid_c1
+    - sensor.pm2_5_grid_c2
+    - sensor.pm2_5_grid_d1
+    - sensor.pm2_5_grid_d2
+    below: 25
+    trigger: numeric_state
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_c1
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_c2
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_d1
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_d2
+        above: 30
+      sequence:
+      - target:
+          entity_id: switch.10021cb10d_1
+        action: switch.turn_on
+        data: {}
+    - conditions:
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_c1
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_c2
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_d1
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_d2
+        below: 25
+      sequence:
+      - target:
+          entity_id: switch.10021cb10d_1
+        action: switch.turn_off
+        data: {}
+  mode: single
+- id: '1746518594051'
+  alias: Fan control based on PM2.5 in A4
+  description: ''
+  triggers:
+  - entity_id:
+    - sensor.pm2_5_grid_a3
+    - sensor.pm2_5_grid_a4
+    - sensor.pm2_5_grid_b3
+    - sensor.pm2_5_grid_b4
+    above: 30
+    trigger: numeric_state
+  - entity_id:
+    - sensor.pm2_5_grid_a3
+    - sensor.pm2_5_grid_a4
+    - sensor.pm2_5_grid_b3
+    - sensor.pm2_5_grid_b4
+    below: 25
+    trigger: numeric_state
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_a3
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_a4
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b3
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b4
+        above: 30
+      sequence:
+      - target:
+          entity_id: switch.10021cb8fe_1
+        action: switch.turn_on
+        data: {}
+    - conditions:
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_a3
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_a4
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b3
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b4
+        below: 25
+      sequence:
+      - target:
+          entity_id: switch.10021cb8fe_1
+        action: switch.turn_off
+        data: {}
+  mode: single
+- id: '1746518810131'
+  alias: Fan control based on PM2.5 in B2
+  description: ''
+  triggers:
+  - entity_id:
+    - sensor.pm2_5_grid_a1
+    - sensor.pm2_5_grid_a2
+    - sensor.pm2_5_grid_a3
+    - sensor.pm2_5_grid_b1
+    - sensor.pm2_5_grid_b2
+    - sensor.pm2_5_grid_b3
+    - sensor.pm2_5_grid_c1
+    - sensor.pm2_5_grid_c2
+    - sensor.pm2_5_grid_c3
+    above: 30
+    trigger: numeric_state
+  - entity_id:
+    - sensor.pm2_5_grid_a1
+    - sensor.pm2_5_grid_a2
+    - sensor.pm2_5_grid_a3
+    - sensor.pm2_5_grid_b1
+    - sensor.pm2_5_grid_b2
+    - sensor.pm2_5_grid_b3
+    - sensor.pm2_5_grid_c1
+    - sensor.pm2_5_grid_c2
+    - sensor.pm2_5_grid_c3
+    below: 25
+    trigger: numeric_state
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_a1
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_a2
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_a3
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b1
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b2
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b3
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_c1
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_c2
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_c3
+        above: 30
+      sequence:
+      - target:
+          entity_id: switch.1002429e7e_1
+        action: switch.turn_on
+        data: {}
+    - conditions:
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_a1
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_a2
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_a3
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b1
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b2
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b3
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_c1
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_c2
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_c3
+        below: 25
+      sequence:
+      - target:
+          entity_id: switch.1002429e7e_1
+        action: switch.turn_off
+        data: {}
+  mode: single
+- id: '1746519013574'
+  alias: Fan control based on PM2.5 in C3
+  description: ''
+  triggers:
+  - entity_id:
+    - sensor.pm2_5_grid_b2
+    - sensor.pm2_5_grid_b3
+    - sensor.pm2_5_grid_b4
+    - sensor.pm2_5_grid_c2
+    - sensor.pm2_5_grid_c3
+    - sensor.pm2_5_grid_c4
+    - sensor.pm2_5_grid_c2
+    - sensor.pm2_5_grid_d2
+    - sensor.pm2_5_grid_d3
+    - sensor.pm2_5_grid_d4
+    above: 30
+    trigger: numeric_state
+  - entity_id:
+    - sensor.pm2_5_grid_b2
+    - sensor.pm2_5_grid_b3
+    - sensor.pm2_5_grid_b4
+    - sensor.pm2_5_grid_c2
+    - sensor.pm2_5_grid_c3
+    - sensor.pm2_5_grid_c4
+    - sensor.pm2_5_grid_c2
+    - sensor.pm2_5_grid_d2
+    - sensor.pm2_5_grid_d3
+    - sensor.pm2_5_grid_d4
+    below: 25
+    trigger: numeric_state
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b2
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b3
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b4
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_c2
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_c3
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_c4
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_d2
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_d3
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_d4
+        above: 30
+      sequence:
+      - target:
+          entity_id: switch.1002426f17_1
+        action: switch.turn_on
+        data: {}
+    - conditions:
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b2
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b3
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_b4
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_c2
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_c3
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_c4
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_d2
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_d3
+        below: 25
+      - condition: numeric_state
+        entity_id: sensor.pm2_5_grid_d4
+        below: 25
+      sequence:
+      - target:
+          entity_id: switch.1002426f17_1
+        action: switch.turn_off
+        data: {}
+  mode: single
